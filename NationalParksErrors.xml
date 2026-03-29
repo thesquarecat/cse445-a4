@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ERROR 1: Wrong root element name (should be NationalParks) -->
+<NationalPark xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:noNamespaceSchemaLocation="NationalParks.xsd">
+
+  <!-- ERROR 2: Missing required attribute (NearestAirport is missing) -->
+  <NationalPark Rating="4.9">
+    
+    <!-- ERROR 5: Duplicate Name element -->
+    <Name>Grand Canyon</Name>
+    <Name>Duplicate Name</Name>
+
+    <!-- Phone exists here (this one is fine) -->
+    <Phone>928-638-7888</Phone>
+
+    <!-- ERROR 4: Address tag not closed -->
+    <Address>
+      <Number>129</Number>
+      <Street>PO Box</Street>
+      <City>Grand Canyon</City>
+      <State>AZ</State>
+      <Zip>86023</Zip>
+    <!-- Missing </Address> -->
+
+  </NationalPark>
+
+  <!-- ERROR 3: Missing Phone element -->
+  <NationalPark NearestAirport="Bozeman Yellowstone International Airport">
+    <Name>Yellowstone</Name>
+
+    <!-- Phone is intentionally missing here -->
+
+    <Address>
+      <Number>168</Number>
+      <Street>PO Box</Street>
+      <City>Yellowstone National Park</City>
+      <State>WY</State>
+      <Zip>82190</Zip>
+    </Address>
+  </NationalPark>
+
+</NationalPark>
