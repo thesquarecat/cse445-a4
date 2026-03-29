@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <NationalParks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                xsi:noNamespaceSchemaLocation="NationalParks.xsd">
-<NationalParks>
   <NationalPark Rating="4.9" NearestAirport="Flagstaff Pulliam Airport">
     <Name>Grand Canyon</Name>
     <Phone>928-638-7888</Phone>
