@@ -132,7 +132,6 @@
       <Zip>98362</Zip>
     </Address>
   </NationalPark>
-</NationalParks>
 
 <NationalPark Rating="4.4">
   <Name>Arches</Name>
@@ -146,3 +145,4 @@
     <Zip>84532</Zip>
   </Address>
 </NationalPark>
+</NationalParks>
