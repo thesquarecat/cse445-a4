@@ -28,7 +28,7 @@
             <tr>
               <td><xsl:value-of select="Name"/></td>
               <td><xsl:value-of select="Phone[1]"/></td>
-              <td><xsl:value-of select="@NearestAirport"/></td>
+              <td><xsl:value-of select="Address/@NearestAirport"/></td>
               <td><xsl:value-of select="@Rating"/></td>
               <td>
                 <xsl:value-of select="Address/Number"/>
